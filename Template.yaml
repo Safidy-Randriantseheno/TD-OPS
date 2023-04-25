@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: 2010-09-09
+Ressources:
+  RDSDBI1DB2H:
+    Type: 'AWS::RDS::DBInstance'
+    Properties:
+      Engine: postgres
+      DBInstNCEcLASS: db.t3.micro
+      MasterUserName: ${env.UserName}
+      MasterUserPassword: ${env.UserPassword}
+      AllocationStorage: 20
+      DBName: STD21092
